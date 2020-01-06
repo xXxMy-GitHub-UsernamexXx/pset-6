@@ -1,11 +1,3 @@
-document.getElementById("submit button").onclick = newItem;
-let itemList = [];
-
-let itemPrototype = Object.create(Object.prototype);
-itemPrototype["description"] = "blank";
-itemPrototype["priority"] = "low";
-itemPrototype["completion"] = "not completed";
-
 var newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
@@ -17,3 +9,11 @@ var newItem = function() {
         li.textContent = addedItem["description"];
 
 };
+
+let itemPrototype = Object.create(Object.prototype);
+itemPrototype["description"] = "blank";
+itemPrototype["priority"] = "low";
+itemPrototype["completion"] = "not completed";
+
+let itemList = [];
+document.getElementById("submit button").onclick = newItem;
