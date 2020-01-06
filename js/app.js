@@ -10,14 +10,14 @@ itemPrototype["description"] = "blank";
 itemPrototype["priority"] = "low";
 itemPrototype["completion"] = "not completed";
 
-var newItem = function() {
+const newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
         addedItem["description"] = itemDescription;
         itemList[itemList.length] = addedItem;
-        let list = document.querySelector("html body ul");
+        let list = document.getElementById("to-do list");
         let newItemForList = document.createElement("li");
-        li.innerHTML = addedItem["description"];
+        li.textContent = addedItem["description"];
         list.append(itemList[itemList.length]);
 
 };
