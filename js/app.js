@@ -1,3 +1,8 @@
+let itemPrototype = Object.create(Object.prototype);
+itemPrototype["description"] = "blank";
+itemPrototype["priority"] = "low";
+itemPrototype["completion"] = "not completed";
+
 var newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
@@ -10,10 +15,6 @@ var newItem = function() {
 
 };
 
-let itemPrototype = Object.create(Object.prototype);
-itemPrototype["description"] = "blank";
-itemPrototype["priority"] = "low";
-itemPrototype["completion"] = "not completed";
 
 let itemList = [];
 window.onload = function() {
