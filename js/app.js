@@ -1,7 +1,7 @@
 let itemList = [];
 
 window.onload = function() {
-        document.getElementById("add item").onsubmit = newItem;
+        document.getElementById("submit button").onclick = newItem;
 
 };
 
