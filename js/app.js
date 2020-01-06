@@ -10,7 +10,7 @@ var newItem = function() {
         itemList[itemList.length] = addedItem;
         let list = document.getElementById("to-do list");
         let newItemForList = document.createElement("li");
-        list.append(itemList[itemList.length]);
+        list.append(newItemForList);
         li.textContent = addedItem["description"];
 
 };
