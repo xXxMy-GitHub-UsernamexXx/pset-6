@@ -32,6 +32,8 @@ form {
 input {
         font: bold 2.2em "Arial", "Arial", "Georgia", sans-serif;
         color: blue;
+        display: block;
+        background-color: white;
 
 }
 
@@ -43,6 +45,7 @@ button {
         border-radius: 50%;
         height: 3em;
         margin: auto;
+        display: block;
 
 }
 
@@ -59,7 +62,6 @@ button:hover {
 ul {
         list-style-type: none;
         text-align: center;
-        border: 3px solid blue;
 
 }
 
