@@ -1,10 +1,5 @@
 let itemList = [];
 
-window.onload = function() {
-        document.getElementById("submit button").onclick = newItem;
-
-};
-
 let itemPrototype = Object.create(Object.prototype);
 itemPrototype["description"] = "blank";
 itemPrototype["priority"] = "low";
@@ -19,5 +14,10 @@ const newItem = function() {
         let newItemForList = document.createElement("li");
         list.append(itemList[itemList.length]);
         li.textContent = addedItem["description"];
+
+};
+
+window.onload = function() {
+        document.getElementById("submit button").onclick = newItem;
 
 };
