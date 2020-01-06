@@ -5,7 +5,7 @@ itemPrototype["completion"] = "not completed";
 
 var newItem = function() {
         let addedItem = Object.create(itemPrototype)
-        let itemDescription = document.getElementById("add item").getElementsByTagName("input");
+        let itemDescription = document.getElementsByTagName("input");
         addedItem["description"] = itemDescription;
         itemList[itemList.length] = addedItem;
         let list = document.getElementById("to-do list");
