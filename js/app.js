@@ -17,7 +17,7 @@ var newItem = function() {
         itemList[itemList.length] = addedItem;
         let list = document.querySelector("html body ul");
         let newItemForList = document.createElement("li");
-        li.innerHTML = itemList[itemList.length];
+        li.innerHTML = addedItem["description"];
         list.append(itemList[itemList.length]);
 
 };
