@@ -6,7 +6,7 @@ itemPrototype["description"] = "blank";
 itemPrototype["priority"] = "low";
 itemPrototype["completion"] = "not completed";
 
-const newItem = function() {
+var newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
         addedItem["description"] = itemDescription;
