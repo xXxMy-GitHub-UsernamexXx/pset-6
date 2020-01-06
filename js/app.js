@@ -16,4 +16,7 @@ itemPrototype["priority"] = "low";
 itemPrototype["completion"] = "not completed";
 
 let itemList = [];
-document.getElementById("submit button").onclick = newItem;
+window.onload = function() {
+        document.getElementById("submit button").onclick = newItem;
+
+};
