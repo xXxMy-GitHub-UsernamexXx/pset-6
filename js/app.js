@@ -1,18 +1,18 @@
+let itemList = [];
+
 window.onload = function() {
         document.getElementById("add item").onsubmit = newItem;
 
 };
 
-let itemList = [];
-
-let first = true
+let first = true;
 
 let itemPrototype = Object.create(Object.prototype);
 itemPrototype["description"] = "blank";
 itemPrototype["priority"] = "low";
 itemPrototype["completion"] = "not completed";
 
-const newItem = function() {
+var newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
         newItem["description"] = itemDescription;
