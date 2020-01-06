@@ -17,7 +17,7 @@ const newItem = function() {
         itemList[itemList.length] = addedItem;
         let list = document.getElementById("to-do list");
         let newItemForList = document.createElement("li");
-        li.textContent = addedItem["description"];
         list.append(itemList[itemList.length]);
+        li.textContent = addedItem["description"];
 
 };
