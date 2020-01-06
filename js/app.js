@@ -14,7 +14,7 @@ var newItem = function() {
         let addedItem = Object.create(itemPrototype)
         let itemDescription = document.getElementById("add item").getElementsByTagName("input");
         addedItem["description"] = itemDescription;
-        itemList.push(addItem);
+        itemList[itemList.length] = addItem;
         let list = document.querySelector("html body ul");
         let newItemForList = document.createElement("li");
         li.innerHTML = itemList[itemList.length];
