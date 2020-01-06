@@ -15,7 +15,6 @@ var newItem = function() {
 
 };
 
-
 let itemList = [];
 window.onload = function() {
         document.getElementById("submit button").onclick = newItem;

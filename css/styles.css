@@ -1,0 +1,72 @@
+* {
+        background-color: gray;
+}
+
+body {
+        margin: auto;
+        width: 1224px;
+
+}
+
+h1 {
+        font: bold 1.1em "Arial", "Arial", "Georgia", sans-serif;
+        text-align: center;
+        color: purple;
+
+}
+
+div.add-item {
+        display: block;
+        text-align: center;
+
+}
+
+form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+
+}
+
+input {
+        font: bold 2.2em "Arial", "Arial", "Georgia", sans-serif;
+        color: blue;
+
+}
+
+button {
+        font: bold 2.2em "Arial", "Arial", "Georgia", sans-serif;
+        background-color: white;
+        color: black;
+        border: 2px solid blue;
+        border-radius: 50%;
+        height: 3em;
+        margin: auto;
+
+}
+
+button:hover {
+        font: bold 2.2em "Arial", "Arial", "Georgia", sans-serif;
+        background-color: blue;
+        color: black;
+        border-radius: 50%;
+        height: 3em;
+        margin: auto;
+
+}
+
+ul {
+        list-style-type: none;
+        text-align: center;
+        border: 3px solid blue;
+
+}
+
+li {
+        list-style-type: none;
+        display: inline-block;
+        color: purple;
+        font: bold 2.2em "Arial", "Arial", "Georgia", sans-serif;
+
+}
