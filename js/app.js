@@ -1,3 +1,4 @@
+document.getElementById("submit button").onclick = newItem;
 let itemList = [];
 
 let itemPrototype = Object.create(Object.prototype);
@@ -14,10 +15,5 @@ const newItem = function() {
         let newItemForList = document.createElement("li");
         list.append(itemList[itemList.length]);
         li.textContent = addedItem["description"];
-
-};
-
-window.onload = function() {
-        document.getElementById("submit button").onclick = newItem;
 
 };
